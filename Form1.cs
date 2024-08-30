@@ -25,7 +25,10 @@ namespace bca_iii_aug_2024
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola");
+            RegisterForm form = new RegisterForm();
+            this.Hide();
+            form.ShowDialog();
+            this.Show();
         }
     }
 
